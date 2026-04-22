@@ -5,8 +5,9 @@ echo "=== 拉取官方最新代码 ==="
 git fetch upstream
 git merge upstream/main --no-edit
 
-echo "=== 应用自定义补丁 ==="
-git apply patches/terms-privacy-links.patch
+echo "=== 应用自定义修改 ==="
+sed -i '' 's|https://postiz.com/terms|https://post.risevideo.ai/terms|g' apps/frontend/src/components/auth/register.tsx
+sed -i '' 's|https://postiz.com/privacy|https://post.risevideo.ai/privacy|g' apps/frontend/src/components/auth/register.tsx
 
 echo "=== 重新build镜像 ==="
 HTTPS_PROXY=http://127.0.0.1:7897 HTTP_PROXY=http://127.0.0.1:7897 \
