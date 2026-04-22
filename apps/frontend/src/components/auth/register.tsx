@@ -256,6 +256,9 @@ export function RegisterAfter({
                     {t('sign_in', 'Sign In')}
                   </Link>
                 </p>
+                <p className="mt-4 text-sm text-center">
+                  <a href="https://app.risevideo.ai/" target="_blank" rel="nofollow" className="underline hover:font-bold">app.risevideo.ai</a>
+                </p>
               </div>
             </div>
           </div>
