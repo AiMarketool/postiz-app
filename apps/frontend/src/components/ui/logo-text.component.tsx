@@ -5,7 +5,7 @@ export const LogoTextComponent = () => {
     <img
       src="/risevideo-logo.png"
       alt="RiseVideo"
-      style={{ height: '33px', width: 'auto' }}
+      style={{ height: '38px', width: 'auto', objectFit: 'contain', maxWidth: '180px' }}
     />
   );
 };
