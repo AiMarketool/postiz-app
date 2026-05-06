@@ -12,7 +12,7 @@ services:
       DATABASE_URL: 'postgresql://postiz-user:postiz-password@postiz-postgres:5432/postiz-db-local'
       REDIS_URL: 'redis://postiz-redis:6379'
       BACKEND_INTERNAL_URL: 'http://localhost:3000'
-      TEMPORAL_ADDRESS: "temporal:7233"
+      TEMPORAL_ADDRESS: 'temporal:7233'
       IS_GENERAL: 'true'
       DISABLE_REGISTRATION: 'false'
 
@@ -31,8 +31,8 @@ services:
       # CLOUDFLARE_REGION: 'auto'
 
       # === Social Media API Settings
-      X_API_KEY: ''
-      X_API_SECRET: ''
+      X_API_KEY: 'nLrJToe6iNTdKST1OYX1KS3Ph'
+      X_API_SECRET: 'L8qPq8rRmH3Or3k7PuLFlfZv6dshpG2HF88HsR9GU7tyDYvbhW'
       LINKEDIN_CLIENT_ID: ''
       LINKEDIN_CLIENT_SECRET: ''
       REDDIT_CLIENT_ID: ''
@@ -112,7 +112,7 @@ services:
       - postiz-config:/config/
       - postiz-uploads:/uploads/
     ports:
-      - "4007:5000"
+      - '4007:5000'
     networks:
       - postiz-network
       - temporal-network
